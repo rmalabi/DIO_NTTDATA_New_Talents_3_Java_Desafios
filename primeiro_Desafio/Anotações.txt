@@ -1,6 +1,7 @@
 Principais comandos git:
 git clone (para clonar o repositório)
-git status (para verificar se há alterações para serem feitas na branch)
+git status (para verificar se há alterações para serem feitas no repositório)
+git add . (incluir as alterações no repositório)
 git commit -m "Mensagem" (realizar commit com descrição)
 git push origin main (enviar as alterações feitas no repositório)
 
