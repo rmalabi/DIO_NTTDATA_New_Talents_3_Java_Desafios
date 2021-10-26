@@ -1,0 +1,39 @@
+Principais comandos git:
+git clone (para clonar o repositório)
+git status (para verificar se há alterações para serem feitas na branch)
+git commit -m "Mensagem" (realizar commit com descrição)
+git push origin main (enviar as alterações feitas no repositório)
+
+
+Informações adicionais:
+
+Ao tentar a autenticação, será disparada a seguinte mensagem:
+
+"remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead. remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information. "
+
+A solução é simples: precisamos gerar um token de acesso, e configurá-lo com alguns pequenos ajustes.
+
+Passos para gerar um token
+
+No GitHub
+
+Settings
+Developer Settings
+Personal access tokens
+Generate new token
+Adicionar uma pequena nota (note) sobre o token a ser gerado
+Escolher a data de expiração do token (opcional)
+Importante!
+
+Em "select scopes", selecione todas as atribuições que o token deve conter. Ex: controle total sobre repositórios privados.
+
+Após isso, confirme e salve o token em um local seguro.
+
+Extras
+
+Na etapa autenticação, o token será usado como senha
+Forma correta para set-url
+Exemplo
+
+git remote set-url origin "https://(username)@github.com/(username)/(nome do repositório).git"
+
